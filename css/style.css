@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.wrapper .header {
+  width: 100%;
+  height: 200px;
+  background-color: #030303;
+}
+
+.wrapper .header-content {
+  margin: 0 auto;
+  padding: 75px 240px;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .header-content_logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.wrapper .header-content_logo span {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+
+.wrapper .header-content_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .header-content_nav ul li {
+  margin-left: 76px;
+}
+
+.wrapper .header-content_nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.wrapper .header-content_nav ul li a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #9D8665;
+}
+
+.wrapper .header-content_nav ul li a:active {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #9D8665;
+}
+
+.wrapper .main .welcome {
+  width: 100%;
+  background-color: #030303;
+}
+
+.wrapper .main .welcome-content {
+  margin: 0 auto;
+  padding: 0 0 0 240px;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .main .welcome-content_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  z-index: 2;
+}
+
+.wrapper .main .welcome-content_text h1 {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  top: 310px;
+}
+
+.wrapper .main .welcome-content_text h3 {
+  padding-top: 316px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.wrapper .main .welcome-content_text button {
+  margin-top: 76px;
+  width: 360px;
+  height: 75px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #710707;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.wrapper .main .welcome-content_text button:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  background-color: #9D8665;
+}
+
+.wrapper .main .welcome-content img {
+  z-index: 0;
+}
+
+.wrapper .visiting {
+  margin-top: 75px;
+}
+
+.wrapper .visiting-content {
+  margin: 0 auto;
+  padding: 0 240px;
+  max-width: 1920px;
+}
+
+.wrapper .visiting-content_title h2 {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9D8665;
+}
+
+.wrapper .visiting-content_title span {
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+}
+
+.wrapper .visiting-content_cards {
+  margin-top: 75px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr;
+  -ms-grid-rows: 1.12fr 1fr;
+      grid-template-rows: 1.12fr 1fr;
+}
+
+.wrapper .visiting-content_cards .card {
+  height: 440px;
+  width: 423px;
+}
+
+.wrapper .visiting-content_cards .card h3 {
+  margin-top: 25px;
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.wrapper .visiting-content_cards .card span {
+  margin-top: 9px;
+  width: 300px;
+  height: 2px;
+  display: block;
+  background-color: #710707;
+}
+
+.wrapper .visiting-content_cards .card h4 {
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.wrapper .visiting-content_cards .card p {
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.wrapper .explore {
+  margin-top: 65px;
+  width: 100%;
+  background-color: #030303;
+}
+
+.wrapper .explore-content {
+  margin: 0 auto;
+  padding: 79px 240px;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .explore-content_text h2 {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.wrapper .explore-content_text span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+  margin-bottom: 75px;
+}
+
+.wrapper .explore-content_text p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.wrapper .video {
+  width: 100%;
+}
+
+.wrapper .video-content {
+  margin: 0 auto;
+  padding: 90px 240px;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .video-content_text {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .video-content_text h2 {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9D8665;
+}
+
+.wrapper .video-content_text p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.wrapper .tickets {
+  margin-top: 65px;
+  width: 100%;
+  background-color: #030303;
+}
+
+.wrapper .tickets-content {
+  margin: 0 auto;
+  padding: 79px 240px;
+  max-width: 1920px;
+}
+
+.wrapper .tickets-content_text h2 {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.wrapper .tickets-content_text span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+  margin-bottom: 75px;
+}
+
+.wrapper .tickets-content_amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .tickets-content_amount .tickets-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .tickets-content_amount .tickets-type h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.wrapper .tickets-content_amount .tickets-type .input {
+  margin-top: 50px;
+}
+
+.wrapper .tickets-content_amount .tickets-type .input label {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.wrapper .tickets-content_amount .tickets-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .tickets-content_amount .tickets-amount h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.wrapper .tickets-content_amount .tickets-amount .input {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .tickets-content_amount .tickets-amount .input label {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */

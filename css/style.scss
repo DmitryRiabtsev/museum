@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+$color-dark: #030303;
+$color-dark-red: #710707;
+$color-font-gold: #9D8665;
+
+
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 100%;
+
+    .header{
+        width: 100%;
+        height: 200px;
+        background-color: $color-dark;
+       
+        &-content{
+            margin: 0 auto;
+            padding: 75px 240px;
+            max-width: 1920px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &_logo{
+                align-items: center;
+                display: flex;
+                padding-bottom: 40px;
+
+                span{
+                    font-family: 'Forum', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 28px;
+                    line-height: 50px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding-left: 20px;
+                    
+                }
+            }
+
+            &_nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                   
+                    
+                    li{
+                        margin-left: 76px;
+
+                        a{
+                            font-family: 'Roboto', sans-serif;  
+                            font-style: normal;
+                            font-weight: 200;
+                            font-size: 22px;
+                            line-height: 50px;
+                            letter-spacing: 2px;
+                            color: #FFFFFF;
+
+                            &:hover{
+                                transition: .5s;
+                                color: $color-font-gold;
+                            }
+
+                            &:active{
+                                transition: .5s;
+                                color: $color-font-gold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main{
+        .welcome{
+            width: 100%;
+            background-color: $color-dark;
+            
+
+            &-content{
+                margin: 0 auto;
+                padding: 0 0 0 240px ;
+                max-width: 1920px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+               
+
+                &_text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    z-index: 2;
+                    
+                   
+
+                    h1{
+                        font-family: 'Forum', cursive;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 80px;
+                        line-height: 90px;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        position: absolute;
+                        top: 310px;
+                    }
+
+                    h3{
+                        padding-top: 316px;
+                        font-family: 'Roboto', sans-serif;  
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 28px;
+                        line-height: 33px;
+                        letter-spacing: 2px;
+                        color: #FFFFFF;
+                        
+                    }
+
+                    button{
+                        margin-top: 76px; 
+                        width: 360px;
+                        height: 75px;
+                        border: none;
+                        outline: none;
+                        border-radius: 10px;
+                        background-color: $color-dark-red;
+                        font-style: normal;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 200;
+                        font-size: 22px;
+                        line-height: 26px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        letter-spacing: 2px;
+                        color: #FFFFFF;
+                        
+                        &:hover{
+                            transition: .5s;
+                            cursor: pointer;
+                            background-color: $color-font-gold;
+
+                        }
+                    }
+                }
+
+                img{
+                    z-index: 0;
+                }
+            }
+        }
+    }
+
+    .visiting{
+        margin-top: 75px;
+
+        &-content{
+            margin: 0 auto;
+            padding: 0 240px ;
+            max-width: 1920px;
+
+            &_title{
+
+                h2{
+                    font-family: 'Forum', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 80px;
+                    line-height: 90px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #9D8665;
+                }
+
+                span{
+                    margin-top: 25px;
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $color-dark-red;
+                }
+            }
+
+            &_cards{
+                margin-top: 75px;
+                display: grid;
+                grid-template-columns: 2fr 2fr 1fr;
+                grid-template-rows: 1.12fr 1fr;
+
+                .card{
+                    height: 440px;
+                    width: 423px;
+                   
+
+                    h3{
+                        margin-top: 25px;
+                        font-family: 'Forum', cursive;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 32px;
+                        line-height: 35px;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+
+                    span{
+                        margin-top: 9px;
+                        width: 300px;
+                        height: 2px;
+                        display: block;
+                        background-color: $color-dark-red;
+                    }
+
+                    h4{
+                        margin-top: 10px;
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: 200;
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #000000;
+
+                    }
+
+                    p{
+                        margin-top: 10px;
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: 200;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+    
+    .explore{
+        margin-top: 65px;
+        width: 100%;
+        background-color: $color-dark;
+        
+        &-content{
+            margin: 0 auto;
+            padding: 79px 240px;
+            max-width: 1920px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+            &_text{
+                
+                h2{
+                    font-family: 'Forum', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 80px;
+                    line-height: 90px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 25px;
+                }
+
+                span{
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $color-dark-red;
+                    margin-bottom: 75px; 
+                }
+
+                p{
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 38px;
+                    color: #FFFFFF;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .video{
+        width: 100%;
+
+        &-content{
+            margin: 0 auto;
+            padding: 90px 240px;
+            max-width: 1920px;
+            display: flex;
+            flex-direction: column;
+
+            &_text{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                h2{
+                    font-family: 'Forum', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 80px;
+                    line-height: 90px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: $color-font-gold;
+                }
+
+                p{
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 38px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .tickets{
+        margin-top: 65px;
+        width: 100%;
+        background-color: $color-dark;
+
+        &-content{
+            margin: 0 auto;
+            padding: 79px 240px;
+            max-width: 1920px;
+
+            &_text{
+
+                h2{
+                    font-family: 'Forum', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 80px;
+                    line-height: 90px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 25px;
+                }
+
+                span{
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $color-dark-red; 
+                    margin-bottom: 75px; 
+                }
+                
+            }
+
+            &_amount{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .tickets-type{
+                    display: flex;
+                    flex-direction: column;
+
+                    h3{
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 33px;
+                        color: #FFFFFF;
+                    }
+
+                    .input{
+                        margin-top: 50px;
+
+                        label{
+                            font-family: 'Roboto', sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #FFFFFF;
+                       
+                        }
+                    } 
+                }
+
+                .tickets-amount{
+                    display: flex;
+                    flex-direction: column;
+
+                    h3{
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 33px;
+                        color: #FFFFFF;
+                    }
+
+                    .input{
+                        margin-top: 50px;
+                        display: flex;
+                        flex-direction: column;
+
+                        label{
+                            font-family: 'Roboto', sans-serif;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #FFFFFF;
+                       
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
