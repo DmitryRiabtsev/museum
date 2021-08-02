@@ -44,7 +44,7 @@
                 <div class="welcome-content">
                     <div class="welcome-content_text">
                         <h1>Welcome<br>to the Louvre</h1>
-                        <h3>From the castle to the museum</h3>
+                        <h2>From the castle to the museum</h2>
                         <button>Discover the Louvre</button>
                     </div>
                     <img src="./assets/png/background.png" alt="museum">
@@ -132,30 +132,32 @@
                      <div class="tickets-content_amount">
                          <img src="./assets/png/Rectangle8.png" alt="">
                          <div class="tickets-type">
-                            <h3>Ticket Type</h3>
-                            <div class="input">
-                                <input type="radio" id="per">
-                                <label for="per">Permanent exhibition</label>
-                            </div>
-                            <div class="input">
-                                <input type="radio" id="tem">
-                                <label for="tem">Temporary exhibition</label>
-                            </div>
-                            <div class="input">
-                                <input type="radio" id="com">
-                                <label for="com">Combined Admission</label>
-                            </div>
+                            <span>Ticket Type</span>
+                            <form class="input">
+                                <div>
+                                    <input id="01" type="radio" name="r" value="1" checked>
+                                    <label for="01">Permanent exhibition</label>
+                                </div>
+                                <div>
+                                    <input id="02" type="radio" name="r" value="2">
+                                    <label for="02">Temporary exhibition</label>
+                                </div>
+                                <div>
+                                    <input id="03" type="radio" name="r" value="3">
+                                    <label for="03">Combined Admission</label>
+                                </div>
+                            </form>
                          </div>
                          <div class="tickets-amount">
-                            <h3>Amount</h3>
-                            <div class="input">
+                            <span>Amount</span>
+                            <form class="input">
                                 <label for="basic">Basic 18+</label>
                                 <input type="number" id="basic" min="1" max="100">
-                            </div>
-                            <div class="input">
+                            </form>
+                            <form class="input">
                                 <label for="senior">Senior 65+</label>
                                 <input type="number" id="senior" min="1" max="100">
-                            </div>
+                            </form>
                             <p>Total €220</p>
                             <button>Buy Now</button>
                          </div>
@@ -176,7 +178,7 @@
                             <p>mail:info@louvre.fr</p>
                         </div>
                         <img src="./assets/png/map.png" alt="map">
-                    </div>>
+                    </div>
                 </div>
             </section>
         </main>

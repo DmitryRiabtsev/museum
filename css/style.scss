@@ -29,7 +29,7 @@ $color-font-gold: #9D8665;
         &-content{
             margin: 0 auto;
             padding: 75px 240px;
-            max-width: 1920px;
+            max-width: 1440px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -105,7 +105,7 @@ $color-font-gold: #9D8665;
                 &_text{
                     display: flex;
                     flex-direction: column;
-                    justify-content: start;
+                    
                     z-index: 2;
                     
                    
@@ -123,7 +123,7 @@ $color-font-gold: #9D8665;
                         top: 310px;
                     }
 
-                    h3{
+                    h2{
                         padding-top: 316px;
                         font-family: 'Roboto', sans-serif;  
                         font-style: normal;
@@ -136,7 +136,7 @@ $color-font-gold: #9D8665;
                     }
 
                     button{
-                        margin-top: 76px; 
+                        margin-top: 80px;
                         width: 360px;
                         height: 75px;
                         border: none;
@@ -176,7 +176,7 @@ $color-font-gold: #9D8665;
         &-content{
             margin: 0 auto;
             padding: 0 240px ;
-            max-width: 1920px;
+            max-width: 1440px;
 
             &_title{
 
@@ -204,7 +204,7 @@ $color-font-gold: #9D8665;
                 margin-top: 75px;
                 display: grid;
                 grid-template-columns: 2fr 2fr 1fr;
-                grid-template-rows: 1.12fr 1fr;
+                grid-template-rows: 1.14fr 1fr;
 
                 .card{
                     height: 440px;
@@ -212,7 +212,7 @@ $color-font-gold: #9D8665;
                    
 
                     h3{
-                        margin-top: 25px;
+                        margin-top: 22px;
                         font-family: 'Forum', cursive;
                         font-style: normal;
                         font-weight: normal;
@@ -232,7 +232,7 @@ $color-font-gold: #9D8665;
                     }
 
                     h4{
-                        margin-top: 10px;
+                        margin-top: 12px;
                         font-family: 'Roboto', sans-serif;
                         font-style: normal;
                         font-weight: 200;
@@ -257,14 +257,14 @@ $color-font-gold: #9D8665;
     }
     
     .explore{
-        margin-top: 65px;
+        margin-top: 55px;
         width: 100%;
         background-color: $color-dark;
         
         &-content{
             margin: 0 auto;
-            padding: 79px 240px;
-            max-width: 1920px;
+            padding: 83px 240px;
+            max-width: 1440px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -304,6 +304,7 @@ $color-font-gold: #9D8665;
             }
         }
     }
+
     .video{
         width: 100%;
 
@@ -344,15 +345,16 @@ $color-font-gold: #9D8665;
             }
         }
     }
+
     .tickets{
-        margin-top: 65px;
+        margin-top: -6px;
         width: 100%;
         background-color: $color-dark;
 
         &-content{
             margin: 0 auto;
-            padding: 79px 240px;
-            max-width: 1920px;
+            padding: 74px 240px;
+            max-width: 1440px;
 
             &_text{
 
@@ -386,8 +388,9 @@ $color-font-gold: #9D8665;
                 .tickets-type{
                     display: flex;
                     flex-direction: column;
+                    margin-right: 165px;
 
-                    h3{
+                    span{
                         font-family: 'Roboto', sans-serif;
                         font-style: normal;
                         font-weight: bold;
@@ -397,16 +400,33 @@ $color-font-gold: #9D8665;
                     }
 
                     .input{
-                        margin-top: 50px;
-
-                        label{
-                            font-family: 'Roboto', sans-serif;
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 22px;
-                            line-height: 26px;
-                            color: #FFFFFF;
                        
+                        display: flex;
+                        flex-direction: column;
+
+                        div{
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: 50px;
+
+                            input{
+                                margin-top: 3px;
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 20px;
+                                cursor: pointer;
+                            }
+
+                            label{
+                                
+                                font-family: 'Roboto', sans-serif;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 22px;
+                                line-height: 26px;
+                                color: #FFFFFF;
+                                
+                            }
                         }
                     } 
                 }
@@ -415,7 +435,7 @@ $color-font-gold: #9D8665;
                     display: flex;
                     flex-direction: column;
 
-                    h3{
+                    span{
                         font-family: 'Roboto', sans-serif;
                         font-style: normal;
                         font-weight: bold;
@@ -428,6 +448,12 @@ $color-font-gold: #9D8665;
                         margin-top: 50px;
                         display: flex;
                         flex-direction: column;
+                        
+                        input{
+                            height: 40px;
+                            width: 140px;
+                            cursor: pointer;
+                        }
 
                         label{
                             font-family: 'Roboto', sans-serif;
@@ -437,6 +463,210 @@ $color-font-gold: #9D8665;
                             line-height: 26px;
                             color: #FFFFFF;
                        
+                        }
+                    }
+
+                    p{
+                        margin:50px 0;
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 33px;
+                        letter-spacing: 1.65px;
+                        color: #FFFFFF;
+                    }
+
+                    button{
+                        width: 175px;
+                        height: 50px;  
+                        background: #FFFFFF;
+                        border-radius: 2px;    
+                        border: none;
+                        outline: none; 
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 22px;
+                        line-height: 26px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        letter-spacing: 2px;
+                        color: #000000;
+
+                        &:hover{
+                            transition: .5s;
+                            cursor: pointer;
+                            background-color: $color-font-gold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contacts{
+        width: 100%;
+
+        &-content{
+            margin: 0 auto;
+            padding: 72px 240px;
+            max-width: 1440px;
+
+            &_text{
+
+                h2{
+                    font-family: 'Forum', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 80px;
+                    line-height: 90px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #9D8665;
+                }
+
+                span{
+                    margin-top: 25px;
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $color-dark-red;
+                }
+            }
+
+            &_map{
+                display: flex;
+                flex-direction: row;
+                margin-top: 75px;
+                justify-content: space-between;
+
+                .text{
+                    margin-top: 13px;
+                    h3{
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 28px;
+                        line-height: 33px;
+                        color: #000000;
+                        margin-bottom: 36px;
+
+                    }
+
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #000000; 
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        background-color: $color-dark;
+
+        &-content{
+            margin: 0 auto;
+            padding: 79px 240px;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &_logo{
+                
+                display: flex;
+                padding-bottom: 40px;
+
+                img{
+                    padding-bottom: 55px;  
+                }
+
+                span{
+                    font-family: 'Forum', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 28px;
+                    line-height: 50px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding-left: 20px;
+                    
+                }
+            }
+
+            &_nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-right: 335px;
+
+                ul{
+                    margin-left: 172px;
+                    li{
+                        a{
+                            font-family: 'Roboto', sans-serif;
+                            font-style: normal;
+                            font-weight: 200;
+                            font-size: 22px;
+                            line-height: 50px;
+                            letter-spacing: 2px;
+                            color: #FFFFFF;
+                            
+                            &:hover{
+                                transition: .5s;
+                                color: $color-font-gold;
+                            }
+
+                            &:active{
+                                transition: .5s;
+                                color: $color-font-gold;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            &_social{
+                margin-top: 83px;
+                ul{
+                    display: flex;
+                    flex-direction: row;
+
+                    li{
+                        height: 48px;
+                        width: 48px;
+                        border: 1px solid #666666;
+                        box-sizing: border-box;
+                        filter: drop-shadow(0px 0px 0px #666666);
+                        border-radius: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 24px ;
+                        
+                        &:hover{
+                            transform: scale(1.5, 1.5);
+                            cursor: pointer;
+                            border: 1px solid red;
+                        }
+
+                        
+
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                             
                         }
                     }
                 }

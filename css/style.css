@@ -25,7 +25,7 @@ a {
 .wrapper .header-content {
   margin: 0 auto;
   padding: 75px 240px;
-  max-width: 1920px;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,9 +125,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   z-index: 2;
 }
 
@@ -144,7 +141,7 @@ a {
   top: 310px;
 }
 
-.wrapper .main .welcome-content_text h3 {
+.wrapper .main .welcome-content_text h2 {
   padding-top: 316px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -156,7 +153,7 @@ a {
 }
 
 .wrapper .main .welcome-content_text button {
-  margin-top: 76px;
+  margin-top: 80px;
   width: 360px;
   height: 75px;
   border: none;
@@ -199,7 +196,7 @@ a {
 .wrapper .visiting-content {
   margin: 0 auto;
   padding: 0 240px;
-  max-width: 1920px;
+  max-width: 1440px;
 }
 
 .wrapper .visiting-content_title h2 {
@@ -227,8 +224,8 @@ a {
   display: grid;
   -ms-grid-columns: 2fr 2fr 1fr;
       grid-template-columns: 2fr 2fr 1fr;
-  -ms-grid-rows: 1.12fr 1fr;
-      grid-template-rows: 1.12fr 1fr;
+  -ms-grid-rows: 1.14fr 1fr;
+      grid-template-rows: 1.14fr 1fr;
 }
 
 .wrapper .visiting-content_cards .card {
@@ -237,7 +234,7 @@ a {
 }
 
 .wrapper .visiting-content_cards .card h3 {
-  margin-top: 25px;
+  margin-top: 22px;
   font-family: 'Forum', cursive;
   font-style: normal;
   font-weight: normal;
@@ -257,7 +254,7 @@ a {
 }
 
 .wrapper .visiting-content_cards .card h4 {
-  margin-top: 10px;
+  margin-top: 12px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -277,15 +274,15 @@ a {
 }
 
 .wrapper .explore {
-  margin-top: 65px;
+  margin-top: 55px;
   width: 100%;
   background-color: #030303;
 }
 
 .wrapper .explore-content {
   margin: 0 auto;
-  padding: 79px 240px;
-  max-width: 1920px;
+  padding: 83px 240px;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,15 +383,15 @@ a {
 }
 
 .wrapper .tickets {
-  margin-top: 65px;
+  margin-top: -6px;
   width: 100%;
   background-color: #030303;
 }
 
 .wrapper .tickets-content {
   margin: 0 auto;
-  padding: 79px 240px;
-  max-width: 1920px;
+  padding: 74px 240px;
+  max-width: 1440px;
 }
 
 .wrapper .tickets-content_text h2 {
@@ -438,9 +435,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 165px;
 }
 
-.wrapper .tickets-content_amount .tickets-type h3 {
+.wrapper .tickets-content_amount .tickets-type span {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -450,10 +448,35 @@ a {
 }
 
 .wrapper .tickets-content_amount .tickets-type .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .tickets-content_amount .tickets-type .input div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 50px;
 }
 
-.wrapper .tickets-content_amount .tickets-type .input label {
+.wrapper .tickets-content_amount .tickets-type .input div input {
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.wrapper .tickets-content_amount .tickets-type .input div label {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -472,7 +495,7 @@ a {
           flex-direction: column;
 }
 
-.wrapper .tickets-content_amount .tickets-amount h3 {
+.wrapper .tickets-content_amount .tickets-amount span {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -492,6 +515,12 @@ a {
           flex-direction: column;
 }
 
+.wrapper .tickets-content_amount .tickets-amount .input input {
+  height: 40px;
+  width: 140px;
+  cursor: pointer;
+}
+
 .wrapper .tickets-content_amount .tickets-amount .input label {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -499,5 +528,253 @@ a {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+}
+
+.wrapper .tickets-content_amount .tickets-amount p {
+  margin: 50px 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+  color: #FFFFFF;
+}
+
+.wrapper .tickets-content_amount .tickets-amount button {
+  width: 175px;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.wrapper .tickets-content_amount .tickets-amount button:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  background-color: #9D8665;
+}
+
+.wrapper .contacts {
+  width: 100%;
+}
+
+.wrapper .contacts-content {
+  margin: 0 auto;
+  padding: 72px 240px;
+  max-width: 1440px;
+}
+
+.wrapper .contacts-content_text h2 {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9D8665;
+}
+
+.wrapper .contacts-content_text span {
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+}
+
+.wrapper .contacts-content_map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 75px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .contacts-content_map .text {
+  margin-top: 13px;
+}
+
+.wrapper .contacts-content_map .text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+  margin-bottom: 36px;
+}
+
+.wrapper .contacts-content_map .text p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.wrapper .footer {
+  width: 100%;
+  background-color: #030303;
+}
+
+.wrapper .footer-content {
+  margin: 0 auto;
+  padding: 79px 240px;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .footer-content_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.wrapper .footer-content_logo img {
+  padding-bottom: 55px;
+}
+
+.wrapper .footer-content_logo span {
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+
+.wrapper .footer-content_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 335px;
+}
+
+.wrapper .footer-content_nav ul {
+  margin-left: 172px;
+}
+
+.wrapper .footer-content_nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.wrapper .footer-content_nav ul li a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #9D8665;
+}
+
+.wrapper .footer-content_nav ul li a:active {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #9D8665;
+}
+
+.wrapper .footer-content_social {
+  margin-top: 83px;
+}
+
+.wrapper .footer-content_social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .footer-content_social ul li {
+  height: 48px;
+  width: 48px;
+  border: 1px solid #666666;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 0px #666666);
+          filter: drop-shadow(0px 0px 0px #666666);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 24px;
+}
+
+.wrapper .footer-content_social ul li:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.wrapper .footer-content_social ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
